@@ -7,6 +7,23 @@ public class Main {
         System.out.println(mayor(113,23));*/
 
         mostrarNaturales(8);
+        mostrarLinea(100);
+        mostrarTriangulo(100);
+    }
+
+    public static void mostrarTriangulo(int numero) {
+        for (int y = 1; y <= numero; y++) {
+            mostrarLinea(y);
+            System.out.println();
+        }
+    }
+
+    public static void mostrarLinea(int num) {
+
+        for (int x = 1; x <= num; x++) {
+            System.out.print("*");
+        }
+
     }
 
     public static void mostrarNaturales(int n) {
