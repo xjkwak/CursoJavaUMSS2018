@@ -3,9 +3,17 @@ package bo.edu.umss.cs.ceis;
 public class Main {
 
     public static void main(String[] args) {
+        /*System.out.println(mayor(5, 4));
+        System.out.println(mayor(113,23));*/
 
-        System.out.println(mayor(3,7));
-        System.out.println(mayor(113,23));
+        mostrarNaturales(8);
+    }
+
+    public static void mostrarNaturales(int n) {
+
+        for (int x = 1; x <= n; x++) {
+            System.out.println(x);
+        }
     }
 
     public static int mayor (int a, int b) {
