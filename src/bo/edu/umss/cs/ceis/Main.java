@@ -3,12 +3,19 @@ package bo.edu.umss.cs.ceis;
 public class Main {
 
     public static void main(String[] args) {
+
+        Fecha hoy = new Fecha(30, 1, 2018);
+
+        hoy.mostrarFechaCorta();
+
+
+
         /*System.out.println(mayor(5, 4));
         System.out.println(mayor(113,23));*/
 
-        mostrarNaturales(8);
+        /*mostrarNaturales(8);
         mostrarLinea(100);
-        mostrarTriangulo(100);
+        mostrarTriangulo(100);*/
     }
 
     public static void mostrarTriangulo(int numero) {
@@ -33,7 +40,7 @@ public class Main {
         }
     }
 
-    public static int mayor (int a, int b) {
+    public static int mayor(int a, int b) {
 
         int mayor = a;
 
@@ -58,11 +65,9 @@ public class Main {
 
         if (xx instanceof String) {
             System.out.println(xx + " Es una cadena");
-        }
-        else if (xx instanceof Integer) {
+        } else if (xx instanceof Integer) {
             System.out.println(xx + " Es un entero!");
-        }
-        else {
+        } else {
             System.out.println(xx + " No es nada!");
         }
     }
